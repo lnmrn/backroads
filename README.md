@@ -1,5 +1,3 @@
-## React Compiler
+Backroads App
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
+Backroads is a simple web app that I currently use as a sandbox and potential client demonstration. For now it only holds few components with basic design but more features will be implemented soon.
