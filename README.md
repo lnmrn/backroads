@@ -1,3 +1,3 @@
 Backroads App
 
-Backroads is a simple web app that I currently use as a sandbox and potential client demonstration. For now it only holds few components with basic design but more features will be implemented soon.
+Backroads is a mere static page.. for now. For practice, this static html site with some css will step by step be turned into a responsive react app that offers different features.
