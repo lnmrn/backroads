@@ -1,7 +1,9 @@
+import logo from "../assets/logo.svg";
+
 function Logo() {
   return (
     <div className="nav-header">
-      <img src="src/assets/logo.svg" className="nav-logo" alt="backroads" />
+      <img src={logo} className="nav-logo" alt="backroads" />
       <button type="button" className="nav-toggle" id="nav-toggle">
         <i className="fas fa-bars"></i>
       </button>
