@@ -1,10 +1,9 @@
-function NavLink({ link, className = "", iconClassName = "", target = "" }) {
+function NavLink({ link, className = "" }) {
   const { href, content } = link;
   return (
     <li>
-      <a href={href} target={target} className={className}>
+      <a href={href} className={className}>
         {content}
-        <i className={iconClassName}></i>
       </a>
     </li>
   );
