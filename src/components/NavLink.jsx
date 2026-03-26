@@ -1,8 +1,9 @@
-function NavLink({ linkRef, children }) {
+function NavLink({ link }) {
+  const { href, content } = link;
   return (
     <li>
-      <a href={linkRef} className="nav-link">
-        {children}
+      <a href={href} className="nav-link">
+        {content}
       </a>
     </li>
   );
