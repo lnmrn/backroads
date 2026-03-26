@@ -1,11 +1,11 @@
 import NavLink from "./NavLink";
-import data from "../data";
+import { navLinks } from "../data";
 
 function NavList() {
   return (
     <ul className="nav-links" id="nav-links">
-      {data.map((link) => (
-        <NavLink key={link.id} link={link} />
+      {navLinks.map((link) => (
+        <NavLink key={link.id} link={link} className="nav-link" />
       ))}
     </ul>
   );

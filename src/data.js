@@ -5,4 +5,10 @@ const navLinks = [
   { id: 4, href: "#tours", content: "tours" },
 ];
 
-export default navLinks;
+const externalLinks = [
+  { id: 1, href: "https://www.facebook.com", content: "" },
+  { id: 2, href: "https://www.twitter.com", content: "" },
+  { id: 3, href: "https://www.twitter.com", content: "" },
+];
+
+export { navLinks, externalLinks };
