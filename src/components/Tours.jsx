@@ -1,11 +1,9 @@
+import Heading from "./heading";
+
 function Tours() {
   return (
     <section className="section" id="tours">
-      <div className="section-title">
-        <h2>
-          featured <span>tours</span>
-        </h2>
-      </div>
+      <Heading title="featured" highlight="tours" />
 
       <div className="section-center featured-center">
         <article className="tour-card">

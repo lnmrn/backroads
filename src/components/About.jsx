@@ -1,19 +1,14 @@
+import about from "../assets/about.jpeg";
+import Heading from "./heading";
+
 function About() {
   return (
     <section className="section" id="about">
-      <div className="section-title">
-        <h2>
-          about <span>us</span>
-        </h2>
-      </div>
+      <Heading title="about" highlight="us" />
 
       <div className="section-center about-center">
         <div className="about-img">
-          <img
-            src="src/assets/about.jpeg"
-            className="about-photo"
-            alt="awesome beach"
-          />
+          <img src={about} className="about-photo" alt="awesome beach" />
         </div>
         <article className="about-info">
           <h3>explore the difference</h3>
