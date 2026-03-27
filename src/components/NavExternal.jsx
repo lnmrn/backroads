@@ -1,11 +1,11 @@
 import { externalLinks } from "../data";
 
-function NavExternal() {
+function NavExternal({ className = "" }) {
   return (
     <ul className="nav-icons">
       {externalLinks.map((link) => (
         <li key={link.id}>
-          <a href={link.href} target="_blank" className="nav-icon">
+          <a href={link.href} target="_blank" className={className}>
             <i className={link.icon}></i>
           </a>
         </li>

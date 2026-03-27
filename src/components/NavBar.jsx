@@ -8,7 +8,7 @@ function NavBar() {
       <div className="nav-center">
         <Logo />
         <NavList />
-        <NavExternal />
+        <NavExternal className="nav-icon" />
       </div>
     </nav>
   );

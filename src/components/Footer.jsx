@@ -1,56 +1,17 @@
+import { navLinks } from "../data";
+import NavExternal from "./NavExternal";
+import NavLink from "./NavLink";
+
 function Footer() {
   return (
     <footer className="section footer">
       <ul className="footer-links">
-        <li>
-          <a href="#home" className="footer-link">
-            home
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="footer-link">
-            about
-          </a>
-        </li>
-        <li>
-          <a href="#services" className="footer-link">
-            services
-          </a>
-        </li>
-        <li>
-          <a href="#featured" className="footer-link">
-            featured
-          </a>
-        </li>
+        {navLinks.map((link) => (
+          <NavLink key={link.id} link={link} className="footer-link" />
+        ))}
       </ul>
       <ul className="footer-icons">
-        <li>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            className="footer-icon"
-          >
-            <i className="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            className="footer-icon"
-          >
-            <i className="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            className="footer-icon"
-          >
-            <i className="fab fa-squarespace"></i>
-          </a>
-        </li>
+        <NavExternal className="footer-icon" />
       </ul>
       <p className="copyright">
         copyright &copy; Backroads travel tours company
