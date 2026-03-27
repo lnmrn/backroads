@@ -6,15 +6,15 @@ function Services() {
     <section className="section services" id="services">
       <Heading title="our" highlight="services" />
       <div className="section-center services-center">
-        <Article highlight="saving money">
+        <Article highlight="saving money" icon="fas fa-wallet fa-fw">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
           officia.
         </Article>
-        <Article highlight="endless hiking">
+        <Article highlight="endless hiking" icon="fas fa-tree fa-fw">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
           officia.
         </Article>
-        <Article highlight="amazing comfort">
+        <Article highlight="amazing comfort" icon="fas fa-socks fa-fw">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
           officia.
         </Article>
