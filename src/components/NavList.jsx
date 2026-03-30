@@ -6,7 +6,7 @@ function NavList() {
   const [showLinks, setShowLinks] = useState(false);
   return (
     <ul
-      className="nav-links"
+      className={`nav-links ${showLinks ? "show-links" : ""}`}
       id="nav-links"
       onClick={() => setShowLinks((show) => !show)}
     >
