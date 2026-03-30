@@ -1,15 +1,9 @@
 import NavLink from "./NavLink";
 import { navLinks } from "../data";
-import { useState } from "react";
 
-function NavList() {
-  const [showLinks, setShowLinks] = useState(false);
+function NavList({ showLinks }) {
   return (
-    <ul
-      className={`nav-links ${showLinks ? "show-links" : ""}`}
-      id="nav-links"
-      onClick={() => setShowLinks((show) => !show)}
-    >
+    <ul className={`nav-links ${showLinks ? "show-links" : ""}`} id="nav-links">
       {navLinks.map((link) => (
         <NavLink key={link.id} link={link} className="nav-link" />
       ))}
