@@ -521,7 +521,7 @@ Navbar
   transition: var(--transition);
 }
 .show-links {
-  height: 280px;
+  height: auto;
 }
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
