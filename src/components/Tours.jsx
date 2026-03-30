@@ -1,4 +1,4 @@
-import Heading from "./heading";
+import Heading from "./Heading";
 import Tour from "./Tour";
 import tour1 from "../assets/tour-1.jpeg";
 import tour2 from "../assets/tour-2.jpeg";
