@@ -1,5 +1,5 @@
 import about from "../assets/about.jpeg";
-import Heading from "./heading";
+import Heading from "./Heading";
 
 function About() {
   return (
