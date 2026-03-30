@@ -15,7 +15,7 @@ function NavBar() {
       <div className="nav-center">
         <Logo onClick={handleToggle} />
         <NavList showLinks={showLinks} />
-        <NavExternal className="nav-icons" />
+        <NavExternal className="nav-icon" />
       </div>
     </nav>
   );
