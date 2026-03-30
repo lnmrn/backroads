@@ -2,7 +2,7 @@ import { externalLinks } from "../data";
 
 function NavExternal({ className = "" }) {
   return (
-    <ul className="nav-icons">
+    <ul className={className}>
       {externalLinks.map((link) => (
         <li key={link.id}>
           <a href={link.href} target="_blank" className={className}>
