@@ -373,6 +373,7 @@ Featured Tours
 .tour-title h4 {
   margin-bottom: 0.75rem;
   line-height: 1.25;
+  letter-spacing: 2px;
 }
 .tour-title p {
   color: var(--clr-grey-7);

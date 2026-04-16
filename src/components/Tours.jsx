@@ -4,14 +4,23 @@ import tour1 from "../assets/tour-1.jpeg";
 import tour2 from "../assets/tour-2.jpeg";
 import tour3 from "../assets/tour-3.jpeg";
 import tour4 from "../assets/tour-4.jpeg";
+import { randomFutureDate } from "../helper";
+import { useFetchTours } from "../hooks/useFetchTours";
+
+const url = "https://www.course-api.com/react-tours-project";
 
 function Tours() {
+  const { data: tours } = useFetchTours(url);
+
   return (
     <section className="section" id="tours">
       <Heading title="featured" highlight="tours" />
 
       <div className="section-center featured-center">
-        <Tour
+        {tours?.map((tour) => (
+          <Tour key={tour.id} tour={tour} date={randomFutureDate(10)} />
+        ))}
+        {/* <Tour
           image={tour1}
           date="august 26th, 2020"
           title="Tibet Adventure"
@@ -58,7 +67,7 @@ function Tours() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae
           tempore voluptatum maxime reprehenderit eum quod exercitationem fugit,
           qui corporis.
-        </Tour>
+        </Tour> */}
       </div>
     </section>
   );

@@ -1,9 +1,20 @@
-function Tour({ children, image, date, title, duration, location, price }) {
+function Tour({ children, tour, date }) {
+  const { name, image, info, price } = tour;
+  const [title, duration] = name.split("in");
+
+  const location = title.split("of").at(-1);
+
   return (
     <article className="tour-card">
       <div className="tour-img-container">
         <img src={image} className="tour-img" alt={title} />
-        <p className="tour-date">{date}</p>
+        <p className="tour-date">
+          {date.toLocaleDateString("en-US", {
+            month: "long",
+            day: "2-digit",
+            year: "numeric",
+          })}
+        </p>
       </div>
       <div className="tour-info">
         <div className="tour-title">
@@ -17,7 +28,7 @@ function Tour({ children, image, date, title, duration, location, price }) {
             </span>{" "}
             {location}
           </p>
-          <p>{duration} days</p>
+          <p>{duration} </p>
           <p>from ${price}</p>
         </div>
       </div>
