@@ -29,7 +29,7 @@ function Tour({ children, tour, date }) {
             {location}
           </p>
           <p>{duration} </p>
-          <p>from ${price}</p>
+          <p>${price}</p>
         </div>
       </div>
     </article>
