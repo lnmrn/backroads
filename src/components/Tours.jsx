@@ -1,8 +1,8 @@
-import Heading from "./Heading";
-import Tour from "./Tour";
 import { randomFutureDate } from "../helper";
 import { useFetchTours } from "../hooks/useFetchTours";
 import { useState } from "react";
+import Heading from "./Heading";
+import Tour from "./Tour";
 import Spinner from "./Spinner";
 import ErrorMessage from "./ErrorMessage";
 
