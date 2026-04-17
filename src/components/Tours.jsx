@@ -7,12 +7,17 @@ import tour4 from "../assets/tour-4.jpeg";
 import { randomFutureDate } from "../helper";
 import { useFetchTours } from "../hooks/useFetchTours";
 import { useState } from "react";
+import Spinner from "./Spinner";
+import ErrorMessage from "./ErrorMessage";
 
 const url = "https://www.course-api.com/react-tours-project";
 
 function Tours() {
   const [isShown, setIsShown] = useState(false);
-  const { data: tours } = useFetchTours(url);
+  const { error, isLoading, data: tours } = useFetchTours(url);
+
+  if (isLoading) return <Spinner />;
+  if (error) return <ErrorMessage />;
 
   return (
     <section className="section" id="tours">
