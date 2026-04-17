@@ -6,10 +6,12 @@ import tour3 from "../assets/tour-3.jpeg";
 import tour4 from "../assets/tour-4.jpeg";
 import { randomFutureDate } from "../helper";
 import { useFetchTours } from "../hooks/useFetchTours";
+import { useState } from "react";
 
 const url = "https://www.course-api.com/react-tours-project";
 
 function Tours() {
+  const [isShown, setIsShown] = useState(false);
   const { data: tours } = useFetchTours(url);
 
   return (
@@ -18,7 +20,13 @@ function Tours() {
 
       <div className="section-center featured-center">
         {tours?.map((tour) => (
-          <Tour key={tour.id} tour={tour} date={randomFutureDate(10)} />
+          <Tour
+            key={tour.id}
+            tour={tour}
+            date={randomFutureDate(10)}
+            info={tour.info}
+            shortInfo={tour.info.slice(0, 100)}
+          />
         ))}
         {/* <Tour
           image={tour1}

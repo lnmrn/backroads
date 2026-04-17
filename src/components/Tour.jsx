@@ -1,4 +1,8 @@
-function Tour({ children, tour, date }) {
+import { useState } from "react";
+import Show from "./Show";
+
+function Tour({ tour, date, shortInfo }) {
+  const [isShown, setIsShown] = useState(false);
   const { name, image, info, price } = tour;
   const [title, duration] = name.split("in");
 
@@ -20,7 +24,10 @@ function Tour({ children, tour, date }) {
         <div className="tour-title">
           <h4>{title}</h4>
         </div>
-        <p>{children}</p>
+        <p>
+          {isShown ? info : shortInfo} ...{" "}
+          <Show isShown={isShown} setIsShown={setIsShown} />
+        </p>
         <div className="tour-footer">
           <p>
             <span>
