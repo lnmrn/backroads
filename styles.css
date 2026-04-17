@@ -676,10 +676,36 @@ Navbar
 .error-message {
   font-size: 2rem;
   line-height: 1.5;
+  font-family: Cantarell;
+  text-transform: uppercase;
 }
 
 .error-actions {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+/* error icon animation */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pulse {
+  display: inline-block;
+  animation: pulse 1.6s ease-in-out infinite;
 }

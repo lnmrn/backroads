@@ -5,7 +5,7 @@ function ErrorMessage() {
   return (
     <div className="error-wrapper">
       <div className="error-card">
-        <i class="fa fa-exclamation-circle"></i>
+        <i className="fa fa-exclamation-circle pulse"></i>
         <p className="error-message">Oops, something slipped!</p>
 
         <div className="error-actions">
