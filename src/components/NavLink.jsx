@@ -2,7 +2,7 @@ function NavLink({ link, className = "", onNavigate = () => {} }) {
   const { href, content } = link;
 
   return (
-    <li>
+    <li className="nav-link">
       <a href={href} className={className} onClick={onNavigate}>
         {content}
       </a>
