@@ -805,3 +805,7 @@ Navbar
 .next-btn:hover {
   color: var(--clr-primary-3);
 }
+
+.suprise {
+  margin-top: 10px;
+}

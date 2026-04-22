@@ -14,6 +14,15 @@ function Reviews() {
     setCurrentIndex((index) => (index <= 0 ? reviews.length - 1 : index - 1));
   }
 
+  function handleSuprise() {
+    let randomIndex = Math.floor(Math.random() * reviews.length);
+    if (randomIndex === currentIndex) randomIndex = randomIndex + 1;
+
+    const isOutOfBounds = randomIndex > reviews.length - 1;
+    if (isOutOfBounds) randomIndex = randomIndex - 1;
+    setCurrentIndex(randomIndex);
+  }
+
   return (
     <section className="section services" id="reviews">
       <Heading title="Our" highlight="reviews" />
@@ -35,6 +44,9 @@ function Reviews() {
               <i className="fas fa-greater-than"></i>
             </button>
           </div>
+          <button className="btn suprise" onClick={handleSuprise}>
+            Suprise me!
+          </button>
         </div>
       </div>
     </section>
