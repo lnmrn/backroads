@@ -777,7 +777,7 @@ Navbar
 
 .review-tour {
   text-transform: uppercase;
-  color: var(--primary-500);
+  color: var(--clr-primary-5);
   font-size: 0.85rem;
   font-weight: 500;
   margin-bottom: 0.75rem;
