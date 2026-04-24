@@ -4,6 +4,7 @@ const navLinks = [
   { id: 3, href: "#services", content: "services" },
   { id: 4, href: "#tours", content: "tours" },
   { id: 5, href: "#reviews", content: "reviews" },
+  { id: 6, href: "#faq", content: "FAQ" },
 ];
 
 const externalLinks = [
@@ -43,4 +44,43 @@ const reviews = [
   },
 ];
 
-export { navLinks, externalLinks, reviews };
+const faqData = [
+  {
+    id: 1,
+    question: "How many people are usually in a tour group?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 2,
+    question: "Is a meal included in the full-day city tour?",
+    answer:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    id: 3,
+    question: "Do you offer airport pickup and drop-off services?",
+    answer:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  },
+  {
+    id: 4,
+    question: "What languages are the tour guides fluent in?",
+    answer:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    id: 5,
+    question: "Are entrance fees to attractions included in the price?",
+    answer:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+  },
+  {
+    id: 6,
+    question: "Can I cancel or reschedule my tour booking?",
+    answer:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.",
+  },
+];
+
+export { navLinks, externalLinks, reviews, faqData };
