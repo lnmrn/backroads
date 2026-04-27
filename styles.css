@@ -812,7 +812,7 @@ Navbar
 
 /* faq */
 .faq {
-  max-width: fit-content;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -867,6 +867,7 @@ Navbar
   color: var(--clr-grey-5);
   line-height: 2;
 
+  /* TO MAKE THE TOGGLE SMOOTHER */
   max-height: 0;
   overflow: hidden;
   transition:
@@ -877,7 +878,8 @@ Navbar
 }
 
 .faq p.open {
-  max-height: 500px; /* big enough to fit your longest answer */
+  /* SAME!! */
+  max-height: 500px;
   opacity: 1;
   margin-top: 1rem;
 }
